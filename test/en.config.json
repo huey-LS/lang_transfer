@@ -1,0 +1,25 @@
+{
+    "main": {
+        "file": "./cn.js",
+        "reg": "^\\s*[\"']([^\"']+)[\"']:\\s*[\"'](.+)[\"']"
+    },
+    "output": {
+        "dir": "./output",
+        "file": "en.js",
+        "content": "var Language = {\\n${txt}};\\nLanguage.lang = 'en';\\nwindow.currentLanguage = Language;",
+        "template": "'${key}': '${value}',\\n"
+    },
+    "report": {
+        "dir": "./report",
+        "disable_version": 1,
+        "file": "en.error.md",
+        "warn": "not_found,duplicate"
+    },
+    "langs": [{
+        "file": "./output/en.js",
+        "reg": "^\\s*[\"']([^\"']+)[\"']:\\s*[\"'](.+)[\"']"
+    }, {
+        "file": "./en.txt",
+        "reg": "^\\s*[\"']([^\"']+)[\"']:\\s*[\"'](.+)[\"']"
+    }]
+}

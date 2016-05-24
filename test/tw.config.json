@@ -1,0 +1,22 @@
+{
+    "main": {
+        "file": "./cn.js",
+        "reg": "^\\s*[\"']([^\"']+)[\"']:\\s*[\"'](.+)[\"']"
+    },
+    "output": {
+        "dir": "./output",
+        "file": "tw.js",
+        "content": "var Language = {\\n${txt}};\\nLanguage.lang = 'zh-TW';\\nwindow.currentLanguage = Language;",
+        "template": "'${key}': '${value}',\\n"
+    },
+    "report": {
+        "warn": "not_found,duplicate"
+    },
+    "langs": [{
+        "file": "./output/tw.js",
+        "reg": "^\\s*[\"']([^\"']+)[\"']:\\s*[\"'](.+)[\"']"
+    }, {
+        "file": "./tw.txt",
+        "reg": "^\\s*[\"']([^\"']+)[\"']:\\s*[\"'](.+)[\"']"
+    }]
+}

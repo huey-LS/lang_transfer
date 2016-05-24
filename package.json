@@ -1,0 +1,12 @@
+{
+  "name": "run",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lang.js",
+  "scripts": {
+    "test": "node --harmony_destructuring run.js './test_config_list.json'",
+    "start": "node --harmony_destructuring run.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

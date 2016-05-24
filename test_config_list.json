@@ -1,0 +1,4 @@
+{
+    "wapjs-en": "./test/en.config.json",
+    "wapjs-tw": "./test/tw.config.json"
+}

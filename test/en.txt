@@ -1,0 +1,4 @@
+'base.cancel': 'taaest'
+/* lang.start: [use without validate] */
+'base.aaa': 'hahahah',
+/* lang.end: [use without validate] */
